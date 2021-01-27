@@ -1,4 +1,4 @@
-package com.julioolivares.petrescue.net.models
+package com.julioolivares.petrescue.models.modelResponse
 
 data class LoginModel(
         val Email: String ,

@@ -1,4 +1,4 @@
-package com.julioolivares.petrescue.net.modelResponse
+package com.julioolivares.petrescue.models.modelResponse
 
 data class LoginResponse(
         val Id : String,
