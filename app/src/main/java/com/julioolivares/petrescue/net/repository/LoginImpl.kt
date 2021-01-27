@@ -9,7 +9,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
 class LoginImpl : Login {
-    val api = RetrofitClient.buildService(PetRescueApi::class.java)
+    private val api = RetrofitClient.buildService(PetRescueApi::class.java)
     override suspend fun LoginWithEmailAndPassword(authRequest: AuthRequest) = withContext(Dispatchers.IO){
         val response = api.Login(authRequest)
 
